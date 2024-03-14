@@ -34,14 +34,23 @@
         >
 
         <!-- hanburger icon -->
-        <button id="menu-icon" class="block hamburer md:hidden focus:outline-none">
+        <button id="menu-icon" class="block hamburger md:hidden focus:outline-none">
             <span class="hamburger-top"></span>
             <span class="hamburger-middle"></span>
             <span class="hamburger-bottom"></span>
         </button>
       </div>
 
-      <!-- middle menu -->
+      <!-- responsive menu for smaller device -->
+      <div class="md:hidden">
+        <div id="menu" class="absolute hidden flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md ">
+            <a href="#">Pricing</a>
+            <a href="#">Product</a>
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Community</a>
+        </div>
+      </div>
     </nav>
 
     <!-- hero section -->
@@ -84,7 +93,7 @@
     <section id="features">
       <!-- flex container -->
       <div
-        class="container flex flex-col px-4 mx-auto mt-18 space-y-12 md:space-y-0 md:flex-row"
+        class="container flex flex-col items-center px-4 mx-auto mt-18 space-y-12 md:space-y-0 md:flex-row"
       >
         <!-- what's different -->
         <div class="flex flex-col space-y-10 md:w-1/2">
@@ -261,7 +270,7 @@
     <section id="cta" class="bg-BrightRed">
       <!-- flex container -->
       <div
-        class="container flex flex-col item-center justify-between px-6 py-10 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
+        class="container flex flex-col item-center justify-between px-6 py-16 mx-auto space-y-12 md:py-10 md:flex-row md:space-y-0"
       >
         <!-- heading -->
         <h2
@@ -271,11 +280,12 @@
         </h2>
 
         <!-- button -->
-        <a
-          class="bg-white text-BrightRed rounded-full p-2 px-6 pt-2 baseline hover:bg-gray-200"
-          href="#"
-          >Get Started</a
-        >
+        <div><a
+            class="bg-white text-BrightRed rounded-full p-2 px-6 shadow-xl pt-2 baseline hover:bg-gray-200"
+            href="#"
+            >Get Started</a
+          ></div>
+        
         
       </div>
     </section>
@@ -348,5 +358,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
